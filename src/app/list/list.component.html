@@ -1,14 +1,13 @@
 <div class="list-container">
   <h2>Providers</h2>
     <ul>
-     <li (click)= 'saveProvider(provider)' *ngFor="let provider of unselectedProviders" class='provider-card' style="cursor:pointer">
+     <li *ngFor="let provider of unselectedProviders" (click)= 'saveProvider(provider)' class='provider-card' style="cursor:pointer">
        <span>Name: {{ provider.name}}</span>
        <br />
        <span>Address: {{provider.address}}</span>
        <br />
        <span>Phone: {{provider.phone}}</span>
        <br />
-       <!-- <button (click)= 'saveProvider(provider)' style="background-color:black; color:white; float:right">Save</button> -->
      </li>
    </ul>
 
